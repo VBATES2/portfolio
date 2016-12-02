@@ -1,0 +1,35 @@
+body{	
+background:url('background.jpg')no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+	color:#9B1919;
+	font-size: 50px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+h2{
+	margin-top: 0;
+	color:#9B1919;
+	font-size: 20px;
+}
+.bio{color:#9B1919;
+font-size: 15px;
+}
+
+.me{height: 150px; width: 150px;border-radius:70px; border-style: solid; border-color: white;
+margin-top: 50px; }
+
+.about{width: 600px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+
+}
+.burgundy{background-color:#9B1919; height: 3px; border:none; width: 500px;}
