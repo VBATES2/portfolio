@@ -1,0 +1,451 @@
+<html>
+	
+
+	<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+
+  <link 
+      rel="stylesheet" 
+      href="prism-atom-dark.css" 
+      type="text/css" 
+      media="screen" 
+    />
+
+    <script type="text/javascript" src="prism.js"></script>
+    <script type="text/javascript" src="prism.ruby.js"></script>
+	
+
+ <title>VLBII</title>
+ <meta name="VLBII Portfolio" description="This is the programming portfolio of Victor LaRue Bates II" >
+
+	</head>
+	
+
+
+			<body>
+
+
+<ul>
+
+  <li class="about-me"><a href="#about" class="nav-link">ABOUT</a></li>
+  <li class="code-samples"><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
+  <li class="web-apps"><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+  <li class="skills-tools"><a href="#skills-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+  <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+
+</ul>
+
+		<div id="about" class="about">
+
+
+			  <div class="about-container">
+
+				<img src="me.jpg" class="me" />
+
+					<h1> Victor LaRue Bates II </h1>
+
+					<hr class="burgundy"/>
+					
+					<h2> DeVry Graduate with a Bachelor's of <br> Applied Science in Electronics Engineering Technology <br> aspiring to become a Software Engineer</h2>
+
+					<hr class="burgundy"/>
+
+						<p class="bio">
+							Victor graduated from DeVry University in 2009. He was not been able to procure a job in Engineering due to unforseen circumstances, and like most college students just took whatever jobs he could to survive. However, now he is now learning new skills in order to restart and try to make his life better. Victor's plans are to dedicate his extra time to culminate past job experiences and skills and upgrade them through self learning and self improvement.
+						</p>
+			
+		</div>
+
+		</div>
+<hr class="redborder" />
+		  <h3 id="code-samples"> Code Snippets</h3>
+		    <hr class="redborder" />
+
+
+<div class="box">
+   <h4>Temperature Conversion</h4>
+  <p>
+    This ruby program will prompt the user for a temperature 
+    in degrees Celsius and let the user know what the 
+    corresponding temperature is in Fahrenheit.
+  </p>
+</div>
+
+<div class="box">
+<pre><code class="language-ruby">
+
+# 1st Course Challenge written by VICTOR BATES II
+# This program follows the instructions from the
+# Firehose Intro course at the Firehose Project.
+# Celsius to Fahreheit
+
+puts '                                    '
+
+puts "  #########################################"
+puts '  #                                       #'
+puts '  #            HELLO  I AM  A             #'
+puts '  #   CELSIUS TO FARENHEIT THERMOMETER.   #'
+puts '  #            LETS   CONVERT             #'
+puts '  #             ^ C  TO  ^ F              #'
+puts '  #                                       #'
+puts '  #########################################'
+
+puts '                                    '
+
+puts '...How many degrees celsius is it outside?...'
+
+puts '                                    '
+
+celsius=gets.to_f
+ 
+def convert(celsius)
+
+farenheit=((celsius*9)/5) + 32
+
+  return farenheit.round(2)
+
+end
+
+puts '                                    '
+
+puts '-------------------------------------------'
+
+puts '                                    '
+
+puts "#{celsius} degrees Celsius =" 
+
+puts '                                    '
+
+puts convert(celsius).to_s + ' degrees Farenheit.'
+
+puts '                                    '
+
+puts '-------------------------------------------'
+
+puts '                                    '
+
+
+</code></pre>
+</div>
+
+<br class="clear" />
+
+<div class="box">
+<pre><code class="language-ruby">
+# 2nd Course Challenge written by VICTOR BATES II
+# This program follows the instructions from the
+# Firehose Intro course at the Firehose Project.
+# ORDINAL
+
+puts '                                    '
+
+puts "  #########################################"
+puts '  #                                       #'
+puts '  #   ENTER A NUMBER AND I WILL TELL      #'
+puts '  #        YOU ITS PROPER PLACE           #'
+puts '  #                                       #'
+puts '  #########################################'
+
+puts '                                    '
+
+puts '-------------------------------------------'
+
+puts '                                    '
+
+number=gets.chomp.to_i
+      
+place_determiner=number % 10
+
+puts '                                    '
+
+puts '-------------------------------------------'
+
+puts '                                    '
+
+
+   
+   if number==11 || number ==12 || number==13
+      
+     
+   puts "Your number is the #{number}th number" 
+
+    
+    elsif place_determiner == 1 
+      
+            puts "Your number is the #{number}st number"
+    
+    elsif place_determiner == 2 
+ 
+       
+            puts "Your number is the #{number}nd number"
+    
+    elsif place_determiner == 3 
+   
+     
+            puts "Your number is the #{number}rd number"
+    
+    else
+     
+            puts "Your number is the #{number}th number"
+
+    end
+ 
+
+puts '                                    '
+</code></pre>
+</div>
+
+<div class="box">
+  <h4>Ordinal Challenge</h4>
+  <p>
+    This ruby program will convert a plain number
+    to the ordinal of the number. So for example,
+    if the user enters 2, it will display 2nd, if
+    the user enters 3, it will display 3rd, etc.
+  </p>
+</div>
+
+<br class="clear" />
+<div class="box">
+   <h4>Foobar</h4>
+  <p>
+    This ruby program is an adaptation of a classic technical 
+    interview problem which displays sequences 
+    of the Foobar pattern.
+  </p>
+</div>
+
+<div class="box">
+ <pre><code class="language-ruby">
+# 3rd Course Challenge written by VICTOR BATES II
+# This program follows the instructions from the
+# Firehose Intro course at the Firehose Project.
+# FOOBAR 
+
+puts '                                    '
+
+puts "  #########################################"
+puts '  #                                       #'
+puts '  #       LETS PLAY THE FOOBAR GAME       #'
+puts '  #     ENTER A NUMBER AND LETS COUNT     #'
+puts '  #       THE FOOs,BARs, & FOOBARs        #'
+puts '  #         FROM 0 TO YOUR NUMBER         #'
+puts '  #                                       #'
+puts '  #########################################'
+
+puts '                                    '
+
+puts '-------------------------------------------'
+
+puts '                                    '
+
+player_number=gets.chomp.to_i
+foobar=0
+foo=0
+bar=0
+count=1
+
+puts '                                    '
+
+puts '-------------------------------------------'
+
+puts '                                    '
+
+puts 0
+
+while count<=player_number
+  
+ if count%3 == 0 && count%5 == 0
+   
+   
+   puts 'FOOBAR'
+   foobar=foobar+1
+ 
+      
+   elsif count%3 == 0
+   
+   puts 'FOO'
+   foo=foo+1
+   
+   elsif count%5 == 0
+   
+    puts 'BAR'
+   
+   bar=bar+1
+   
+   else
+   
+     puts count
+      
+ end
+  
+  count=count+1
+  
+end
+
+puts '                                    '
+
+puts '-------------------------------------------'
+
+puts '                                    '
+
+puts " There are #{foo} FOOS"
+
+puts '                                    '
+
+puts '-------------------------------------------'
+
+puts '                                    '
+
+puts " There are #{bar} BARS"
+
+puts '                                    '
+
+puts '-------------------------------------------'
+
+puts '                                    '
+
+puts " There are #{foobar} FOOBARS"
+
+puts '                                    '
+
+puts '-------------------------------------------'
+
+puts '                                    '
+   
+ </code></pre>
+</div>
+
+<br class="clear" />
+
+
+<!--
+
+These are just images you will need to replace later with actual 
+
+web apps, skills, and tools!
+
+	DO NOT GIVE TO INTERVIEWERS UNTIL SCREENSHOTS AND IMAGES ARE CORRECT
+
+ -->
+
+
+<hr class="redborder" />
+<h3 id="web-apps">Web Apps</h3>
+<hr class="redborder" />
+
+<div class="box">
+  <h4>Quote Generator</h4>
+<img src="splurty.png" class="full-width" />
+ <p>
+        A database-powered quote generator with a mobile-first
+        design, using the Ruby on Rails framework, HTML, and CSS.
+        Uses Git and GitHub for version control, and launched
+        on Heroku.
+  </p>
+</div>
+<div class="box">
+  <h4>Yelp Clone</h4>
+  <img src="nomster.png" class="full-width" />
+  <p>
+    A Yelp clone that integrates with the Google Maps API 
+    and includes features like user comments, star ratings,
+    image uploading, and user authentication.
+  </p>
+</div>
+<br class="clear" />
+
+<div class="box">
+  <h4>Two-Sided Market Place</h4>
+  <img src="flixter.png" class="full-width" />
+  <p>
+    A two-sided, video-streaming marketplace platform that
+    features credit card payment capabilities, user role
+    management, complex user interfaces, and advanced
+    database relationships.
+  </p>
+</div>
+<div class="box">
+  <h4>Test Driven Development</h4>
+  <img src="grammable.png" class="full-width" />
+  <p>
+    An Instagram clone that was built using industry-standard, test-driven
+    development following numerous red/green/refactor cycles.
+  </p>
+</div>
+<br class="clear" />
+<div class="box">
+  <h4>Single Page Todo Application</h4>
+  <img src="todoster.png" class="full-width" />
+  <p>
+    This single-page to-do application features a
+    fluid user interface that– by using JavaScript–
+    allows users to rapidly add dynamic content.
+  </p>
+</div>
+<div class="box">
+  <h4>Agile Team Project</h4>
+  <img src="chess.png" class="full-width" />
+  <p>
+    Worked on an Agile software development team building
+    a chess application. Under the guidance of a senior software engineer,
+    we had weekly Agile team meetings for code reviews, sprint planning,
+    and feature assignments.
+  </p>
+</div>
+<br class="clear" />
+
+<hr class="redborder" />
+
+<h3 id="skills-tools">Skills &amp; Tools</h3>
+<hr class="redborder" />
+<p class="skills-and-tools">
+  Ken has developed proficiency and expertise 
+  in the following programming languages and 
+  comfort with the following tools.
+</p>
+<div class="icons">
+  <img src="github.png" class="icon" />
+  <img src="rubocop.png" class="icon" />
+  <img src="trello.png" class="icon" />
+  <img src="slack.png" class="icon" />
+  <img src="codeship.png" class="icon" />
+
+  <br class="clear" />
+  <img src="skills.png" class="icon"/>
+</div>
+
+<div class="contact-me"  id="hire-me">
+
+ <hr class="whiteborder" />
+
+  <h3 class="contact-headline">Contact</h3>
+
+<hr class="whiteborder" />
+
+  <p class="contact-info">
+
+    Currently entertaining new opportunities.
+
+    Please get in touch via email:
+
+  </p>
+<br>
+  <p>
+
+    <a href="mailto:ken@thefirehoseproject.com" class="contact-link">
+      ken@thefirehoseproject.com
+
+    </a>
+
+  </p>
+
+</div>
+
+
+
+			</body>
+
+</html>

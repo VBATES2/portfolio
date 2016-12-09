@@ -1,15 +1,11 @@
 body{	
-background:url('background.jpg')no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
  font-family: 'Open Sans', sans-serif;
 }
 
 h1{
 	color:#9B1919;
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: normal;
 	margin-bottom: 0;
 }
@@ -17,19 +13,154 @@ h1{
 h2{
 	margin-top: 0;
 	color:#9B1919;
-	font-size: 20px;
+	font-size: 24px;
 }
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+     padding-top: 30px;
+ }
+
+ul{
+  height: 100px;
+  background-color: #9B1919;
+  text-align: center;
+  margin-top: 25px;
+}
+
+li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 25px 25px 25px 25px;
+}
+
+.about-me{
+  border-style: solid;
+  border-color: white;
+}
+.code-samples {
+  border-style: solid;
+  border-color: white;
+}
+.web-apps {
+  border-style: solid;
+  border-color: white;
+}
+.skills-tools{
+  border-style: solid;
+  border-color: white;
+}
+.hire-me {
+  border-style: solid;
+  border-color: white;
+}
+
+
 .bio{color:#9B1919;
-font-size: 15px;
+font-size: 18px;
 }
 
 .me{height: 150px; width: 150px;border-radius:70px; border-style: solid; border-color: white;
 margin-top: 50px; }
 
-.about{width: 600px;
+.about{width: 700px;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
 
 }
 .burgundy{background-color:#9B1919; height: 3px; border:none; width: 500px;}
+
+.about-container{
+	background:url('background.jpg')no-repeat center center fixed; 
+	height: 800px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+
+}
+h3 {
+  text-align:center;
+  color:#9B1919;
+  font-size: 28px;
+  font-weight:normal;
+  margin-top: 50px;
+}
+.redborder {
+  border-top: 5px double #9B1919;
+  width: 1000px;
+  border-bottom: none;
+  border-right: none;
+}
+
+.whiteborder {
+  border-top: 5px double #ffffff;
+  width: 1000px;
+  border-bottom: none;
+  border-right: none;
+}
+
+.box {
+	text-align: center;
+	font-size: 20px;
+  float:left;
+  background-color: #AAA;
+   width: 42.5%;
+  margin-left: 5%;
+    margin-top: 50px;
+}
+
+.clear {
+  clear:both;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.skills-and-tools {
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icon {
+  margin: 30px 0;
+}
+
+.contact-me {
+  height: 300px;
+  background-color: #9B1919;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.contact-headline {
+  color: white;
+}
+
+.contact-info {
+  color: white;
+  font-size: 16px;
+  margin-top: 30px;
+  
+}
+
+.contact-link {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+ 
+  padding-top: 30px;
+}
